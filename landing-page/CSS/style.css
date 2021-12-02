@@ -459,6 +459,48 @@ body{
     margin-bottom: 30px;
 }
 
+
+
+/* Tienda */
+
+.products{
+    text-align: center;
+}
+
+.products__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.products__padding{
+    padding: 3rem;
+    transition: padding .3s;
+    border: 1px solid #283747;
+    border-radius: 6px;
+}
+
+.products__title{
+    text-align: center;
+    font-size: 20px;
+    padding: 3px 3px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
+
+.products__paragraph{
+    padding: 1rem;
+}
+
+.products__img{
+    max-width: 400px;
+}
+
+
+
 /* Footer */
 
 .footer{
