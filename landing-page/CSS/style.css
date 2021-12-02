@@ -469,7 +469,7 @@ body{
 
 .products__container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
