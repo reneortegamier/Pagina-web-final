@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./landing-page/IMG/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./landing-page/CSS/normalize.css">
     <link rel="stylesheet" href="./landing-page/CSS/style.css">
-    
 
 
     <meta name="theme-color" content="#85929E">
@@ -17,7 +16,7 @@
 </head>
 <body>
     
-<header class="hero__tienda">
+<header class="hero__blog">
     <nav class="nav container">
         <div class="nav__logo">
             <a href="index.html" class="nav__title">Zamnature</a>
@@ -53,62 +52,46 @@
         <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos assumenda tempore dignissimos quibusdam dolore, doloremque ab eum.</p>
         <a href="" class="cta">Comienza ahora</a>
     </section>
+
+    <main>
+
+    </main>
+
+    
+
 </header>
 
 <main>
-    <section class="products container">
-        <h2 class="subtitle">Productos</h2>
+    <section class="blog container">
+        <h2 class="subtitle">Aprende algo nuevo el día de hoy!</h2>
 
-        <section class="products__container">
+        <div class="blog__table">
 
-            <article class="products__padding">
-                <div class="products__content">
-                    <img src="./landing-page/IMG/tienda/Dormirbien_mockup.png" alt="" class="products__img">
-                    <h3 class="products__title">Dormir Bien</h3>
-                    <h4 class="products__price">$299</h4>
-                    <p class="products__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="cta">Agregar al Carrito</a>
-
-                    <!-- <script
-                        src="https://www.paypal.com/sdk/js?client-id=AVe4sf-YHMGG0mCXA7Cr-vs6-h0iC2QXftLouuGW6zcNMJbTRvXYrUudF96lWSEKolkhZftjK0XCHHdt&currency=MXN">
-                        </script>
-                        <div id="paypal-button-container"></div>
-
-                        <script>
-                            paypal.Buttons({
-                                style:{
-                                    color: 'blue', 
-                                    shape: 'pill',
-                                    label: 'pay'
-                                },
-                                createOrder: function(data, actions){
-                                    return actions.order.create({
-                                        purchase_units:[{
-                                            amount:{
-                                                value: 299
-                                            }
-                                        }]
-                                    });
-                                },
-
-                                onApprove: function(data, actions){
-                                    actions.order.capture().then(function(detalles){
-                                        console.log(detalles)
-                                    });
-                                },
-
-                                onCancel: function(data){
-                                    alert("Pago cancelado");
-                                    console.log(data)
-                                }
-                            }).render('#paypal-button-container');
-                        </script> -->
+            <div class="blog__element" style="background-image: url(./landing-page/IMG/blog1.jpg);">
+                <div class="textos">
+                    <h3 class="hero__title">Rock in rio</h3>
+                    <p class="hero__paragraph">16 de junio de 2022</p>
                 </div>
-            </article>
-        </section>
+            </div>
 
+            <div class="blog__element" style="background-image: url(./landing-page/IMG/blog2.jpg);">
+                <div class="textos">
+                    <h3 class="hero__title">Rock in rio</h3>
+                    <p class="hero__paragraph">16 de junio de 2022</p>
+                </div>
+            </div>
+
+            <div class="blog__element" style="background-image: url(./landing-page/IMG/blog3.jpg);">
+                <div class="textos">
+                    <h3 class="hero__title">Rock in rio</h3>
+                    <p class="hero__paragraph">16 de junio de 2022</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
+
 
 <footer class="footer">
     <section class="footer__container container">
@@ -131,10 +114,11 @@
             </ul>
         </nav>
 
-        <form class="footer__form">
+        <form class="footer__form" action="https://formspree.io/f/xrgjzorg"
+        method="POST">
             <h2 class="footer__newsletter">Suscribete a nuestro newsletter y recibe un 15% de descuento en tu primer compra.</h2>
             <div class="footer__inputs">
-                <input type="email" placeholder="E-mail:" class="footer__input">
+                <input type="email" placeholder="E-mail:" class="footer__input"  name="_replyto">
                 <input type="submit" value="Registrate" class="footer__submit">
             </div>
         </form>
@@ -170,5 +154,4 @@
 
 <script src="./landing-page/JS/slider.js"></script>
 <script src="./landing-page/JS/menu.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
